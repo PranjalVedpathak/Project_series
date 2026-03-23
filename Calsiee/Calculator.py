@@ -87,13 +87,13 @@ def button_clicked(value):
                         label["text"]=remove_zero_decimal(numA/numB)
                 clear_all()
 
-        elif value in "+-*/":
+        elif value in "+-x/":
             if operator is None:
                 A=label["text"]
                 label["text"]="0"
                 B="0"
 
-            operator=value
+            operator=value 
         
     elif value in top_symbols:
         if value=="AC":
